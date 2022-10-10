@@ -13,6 +13,7 @@ header
     position: fixed;
     z-index:1 ;
     background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    padding: 40px;
 }
 
 
@@ -173,17 +174,43 @@ header
 
 }
 
+@media screen and (max-width: 1700px) {
+    .container__cover{
+        background-position: 50%;
+    }
+}
+
+
+
+
 
 @media screen and (max-width:1200px){
     
     header{
         padding: 40px;
     }
+    .container__cover{
+        background-position: -100px;
+    }
+
+    .container__cover .svg img{
+        width: 500px;
+    }
 
 
 }
+@media screen and (max-width:1020px){
+
+     .container__cover .svg img{
+        display: none;
+    }
+
+    .container__cover .text{
+        max-width: 600;
+    }
 
 
+}
 @media screen and (max-width:720px) {
     .menu nav {
        position: fixed;
